@@ -1,5 +1,11 @@
 #  Livewire Comments Package
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/vigstudio/livewire-comments.svg?style=flat-square)](https://packagist.org/packages/vigstudio/livewire-comments)
+[![Total Downloads](https://img.shields.io/packagist/dt/vigstudio/livewire-comments.svg?style=flat-square)](https://packagist.org/packages/vigstudio/livewire-comments)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/nghianecom)
+
+[!["Donate Me!"](https://i.ibb.co/Pw6s74r/image.png)](https://nghiane.com)
+
 ## _Introduction_
 Package use Macroable trait to add comments to any model. It uses Livewire and AlpineJs to create a comment system with a lot of features.
 
