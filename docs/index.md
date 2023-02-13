@@ -14,9 +14,9 @@ Comments package for applications. Using this package, you can create and associ
 - [x] Emoji support
 - [x] Markdown support
 - [x] NSFW image upload check support
+- [X] Allow guest to comment
 
 ## _Pending Features_
-- [ ] Allow guest to comment
 - [ ] Admin panel
 - [ ] Mention user with @
 - [ ] Emoji Suggestion Popup
@@ -44,10 +44,29 @@ composer require vigstudio/vgcomments
 ```
 
 ## _Usage_
+
+
 **Publish the assets files with:**
 ```bash
 php artisan vendor:publish --tag=vgcomment-assets
 ```
+
+**Publish the assets files if you upgrade the package:**
+```bash
+php artisan vendor:publish --tag=vgcomment-assets --force
+```
+
+**Or Add this to `composer.json` Auto Publish the assets files when upgrade the package:**
+```bash
+"scripts": {
+        ...
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=vgcomment-assets --force",
+        ],
+        ...
+    },
+```
+
 
 **You can publish the config with:**
 ```bash
@@ -164,7 +183,7 @@ php artisan optimize:clear
 ### _[Livewire Comments Packages](https://vgcomment.netlify.app/livewire-comments/index.html)_
 Comments package for applications using Livewire. Using this package, you can create and associate comments with Eloquent models.
 
-#### [Version 1.0.0](https://vgcomment.netlify.app/livewire-comments/1.0.0/index.html) 
+#### [Version 1](https://vgcomment.netlify.app/livewire-comments/1.0.0/index.html) 
 
 ### _Blade Comments Packages (Coming soon)_
 Comments package for applications using Blade. Using this package, you can create and associate comments with Eloquent models.

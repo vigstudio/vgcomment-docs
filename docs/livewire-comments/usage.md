@@ -12,6 +12,10 @@ Add to bottom of body section of your layout file.
 @commentScripts
 ```
 
+## _Add the alpine JS library if you haven't already_
+```blade
+<script src="//unpkg.com/alpinejs" defer></script>
+```
 ## _Add the Livewire Component_
 Add the Livewire component to your view file.
 If you don't have a pageId, you can use the current url as pageId.

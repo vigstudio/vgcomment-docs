@@ -64,13 +64,34 @@ composer require vigstudio/livewire-comments
 
 **Publish the assets files with:**
 ```bash
+php artisan vendor:publish --tag=vgcomment-assets
 php artisan vendor:publish --tag=vgcomment-assets-livewire
+```
+
+
+**Publish the assets files if you upgrade the package:**
+```bash
+php artisan vendor:publish --tag=vgcomment-assets --force
+php artisan vendor:publish --tag=vgcomment-assets-livewire --force
+```
+
+**Or Add this to `composer.json` Auto Publish the assets files when upgrade the package:**
+```bash
+"scripts": {
+        ...
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=vgcomment-assets --force",
+            "@php artisan vendor:publish --tag=vgcomment-assets-livewire --force",
+        ],
+        ...
+    },
 ```
 
 **You can publish the config with:**
 ```bash
 php artisan vendor:publish --tag=vgcomment-config
 ```
+
 Edit prefix route in `config/vgcomment.php` file.
 ```php
     /*
