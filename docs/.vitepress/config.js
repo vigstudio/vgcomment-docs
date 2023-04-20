@@ -3,24 +3,28 @@ export default {
     description: 'VgComments is a Laravel Package for adding comments to your application.',
     themeConfig: {
         sidebar: {
-            '/livewire-comments': [
-                // {
-                //     text: 'Changelog',
-                //     collapasble: true,
-                //     items: [
-                //         {text: '1.0.0', link: '/livewire-comments/1.0.0/index.md'},
-                //     ]
-                // },
+            '/': [
+                {
+                    text: '',
+                    items: [
+                        {text: 'Overview', link: 'index.md'},
+                        {text: 'Installation', link: 'installation.md'},
+                        {text: 'Config', link: 'config.md'},
+                        {text: 'Usage', link: 'usage.md'},
+                    ]
+                },
+            ],
+            '/livewire-comments/': [
                 {
                     text: 'Getting Started',
                     items: [
-                        {text: 'Installation', link: '/livewire-comments/index.md'},
-                        {text: 'Configuration', link: '/livewire-comments/config.md'},
+                        {text: 'Overview', link: '/livewire-comments/index.md'},
+                        {text: 'Installation', link: '/livewire-comments/installation.md'},
+                        {text: 'Configuration', link: '../config.md'},
                         {text: 'Usage', link: '/livewire-comments/usage.md'},
                     ]
                 },
             ],
-
         }
     }
 }
